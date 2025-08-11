@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Click The Circle</title>
+    <style>
+        .container{
+            margin: auto;
+            text-align: center;   
+            width: 400px;
+        }
+        .area{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            position: relative;
+            background: rgb(255, 1, 170);
+        }
+        .ball{
+            height: 30px;
+            width: 30px;
+            background: rgb(81, 255, 0);
+            border-radius: 20000px;
+            position: absolute;
+            display: none;
+            transition: left 1s, top 1s;
+        }
+        body{
+            background-image: url('/Squed Game.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        button{
+            padding: 13px 36px;
+            background: #ec4d04;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h2>Click The circle game</h2>
+        <button onclick="start()">Start</button>
+        <button onclick="replay()">Replay (Press f5)</button>
+        <p>Score : <span>0</span></p>
+        <p id="time"></p>
+        <div class="area">
+           <div class="ball" onclick="scor()"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
